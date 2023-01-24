@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.n8m.nl
+releases:
+- chart: dev/python-http
+  version: 0.0.1
+  name: python-http
+templates: {}
+renderedvalues: {}
