@@ -33,22 +33,27 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: nigle-dev
+    repository: jx3-kubernetes
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: n8m.nl
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: nigle-dev
   repository: bucketrepo
   secretStorage: local
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
-  enabled: false
+  enabled: true
 jxRequirementsIngressTLS:
   enabled: false
 jxRequirementsKuberhealthy:
