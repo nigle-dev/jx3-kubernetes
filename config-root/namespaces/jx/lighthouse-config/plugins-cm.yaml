@@ -6,6 +6,10 @@ data:
       repos:
       - nigle-dev/jx3-kubernetes
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - nigle-dev/python-http
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +25,11 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      nigle-dev/python-http:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +37,20 @@ data:
     plugins:
       nigle-dev/jx3-kubernetes:
       - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      nigle-dev/python-http:
       - approve
       - assign
       - help
@@ -53,6 +76,11 @@ data:
     - repos:
       - nigle-dev/jx3-kubernetes
       trusted_org: todo
+    - repos:
+      - nigle-dev/python-http
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
