@@ -20,6 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
+    class: nginx
     domain: "n8m.nl"
     externalDNS: true
     namespaceSubDomain: -jx.
