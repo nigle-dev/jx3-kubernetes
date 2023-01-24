@@ -22,7 +22,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: "n8m.nl"
+    domain: n8m.nl
     externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
