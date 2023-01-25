@@ -11,6 +11,7 @@ spec:
     - name: golang-http
     - name: python-http
     - name: python-http2
+    - name: python-http3
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
