@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.n8m.nl
+releases:
+- chart: dev/python-http3
+  version: 0.0.1
+  name: python-http3
+templates: {}
+renderedvalues: {}
