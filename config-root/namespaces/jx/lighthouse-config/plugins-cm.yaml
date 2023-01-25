@@ -18,6 +18,10 @@ data:
       repos:
       - nigle-dev/python-http2
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - nigle-dev/python-http3
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -44,6 +48,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       nigle-dev/python-http2:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      nigle-dev/python-http3:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -110,6 +119,20 @@ data:
       - cat
       - dog
       - pony
+      nigle-dev/python-http3:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -130,6 +153,9 @@ data:
       trusted_org: todo
     - repos:
       - nigle-dev/python-http2
+      trusted_org: todo
+    - repos:
+      - nigle-dev/python-http3
       trusted_org: todo
     welcome:
     - message_template: Welcome
