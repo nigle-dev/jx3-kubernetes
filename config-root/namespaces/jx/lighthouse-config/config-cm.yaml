@@ -10,6 +10,7 @@ data:
         nigle-dev/golang-http: true
         nigle-dev/jx3-kubernetes: true
         nigle-dev/python-http: true
+        nigle-dev/python-http2: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -24,6 +25,7 @@ data:
         nigle-dev/golang-http: merge
         nigle-dev/jx3-kubernetes: merge
         nigle-dev/python-http: merge
+        nigle-dev/python-http2: merge
       queries:
       - labels:
         - approved
@@ -37,6 +39,7 @@ data:
         - nigle-dev/jx3-kubernetes
         - nigle-dev/golang-http
         - nigle-dev/python-http
+        - nigle-dev/python-http2
       - labels:
         - updatebot
         missingLabels:
@@ -49,6 +52,7 @@ data:
         - nigle-dev/jx3-kubernetes
         - nigle-dev/golang-http
         - nigle-dev/python-http
+        - nigle-dev/python-http2
       target_url: http://lighthouse-jx.n8m.nl/merge/status
 kind: ConfigMap
 metadata:
