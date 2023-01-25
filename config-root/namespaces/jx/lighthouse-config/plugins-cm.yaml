@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - nigle-dev/golang-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - nigle-dev/python-http
       require_self_approval: true
     cat: {}
@@ -20,6 +24,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      nigle-dev/golang-http:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       nigle-dev/jx3-kubernetes:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -35,6 +44,20 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      nigle-dev/golang-http:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
       nigle-dev/jx3-kubernetes:
       - config-updater
       - approve
@@ -75,6 +98,9 @@ data:
     triggers:
     - repos:
       - nigle-dev/jx3-kubernetes
+      trusted_org: todo
+    - repos:
+      - nigle-dev/golang-http
       trusted_org: todo
     - repos:
       - nigle-dev/python-http

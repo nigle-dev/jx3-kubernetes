@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        nigle-dev/golang-http: true
         nigle-dev/jx3-kubernetes: true
         nigle-dev/python-http: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        nigle-dev/golang-http: merge
         nigle-dev/jx3-kubernetes: merge
         nigle-dev/python-http: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - nigle-dev/jx3-kubernetes
+        - nigle-dev/golang-http
         - nigle-dev/python-http
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - nigle-dev/jx3-kubernetes
+        - nigle-dev/golang-http
         - nigle-dev/python-http
       target_url: http://lighthouse-jx.n8m.nl/merge/status
 kind: ConfigMap
