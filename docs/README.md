@@ -73,7 +73,7 @@
 	    <tr>
 	      <td>py-http</td>
 	      <td title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> py-http</td>
-	      <td>0.0.1</td>
+	      <td>0.0.2</td>
 	      <td></td>
 	      <td></td>
 	    </tr>

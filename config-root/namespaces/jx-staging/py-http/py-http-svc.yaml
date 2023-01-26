@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: py-http
   labels:
-    chart: "py-http-0.0.1"
+    chart: "py-http-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'py-http'

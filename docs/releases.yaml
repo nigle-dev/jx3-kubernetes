@@ -104,14 +104,14 @@
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.1
+    appVersion: 0.0.2
     description: A Helm chart for Kubernetes
-    firstDeployed: "2023-01-26T11:47:58Z"
+    firstDeployed: "2023-01-26T12:44:28Z"
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
-    lastDeployed: "2023-01-26T11:47:58Z"
+    lastDeployed: "2023-01-26T12:44:28Z"
     name: py-http
     releaseName: py-http
     repositoryName: dev
     repositoryUrl: http://bucketrepo-jx.n8m.nl/bucketrepo/charts/
     resourcePath: config-root/namespaces/jx-staging/py-http
-    version: 0.0.1
+    version: 0.0.2

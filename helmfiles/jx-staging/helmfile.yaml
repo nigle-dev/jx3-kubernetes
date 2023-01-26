@@ -9,7 +9,7 @@ repositories:
   url: http://bucketrepo-jx.n8m.nl/bucketrepo/charts/
 releases:
 - chart: dev/py-http
-  version: 0.0.1
+  version: 0.0.2
   name: py-http
   values:
   - jx-values.yaml
