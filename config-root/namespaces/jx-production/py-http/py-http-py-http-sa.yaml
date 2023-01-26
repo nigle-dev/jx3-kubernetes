@@ -1,0 +1,10 @@
+# Source: py-http/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: py-http-py-http
+  annotations:
+    meta.helm.sh/release-name: 'py-http'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
