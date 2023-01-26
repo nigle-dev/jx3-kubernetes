@@ -100,3 +100,18 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.5.0
+- namespace: jx-staging
+  path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.0.1
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2023-01-26T11:47:58Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    lastDeployed: "2023-01-26T11:47:58Z"
+    name: py-http
+    releaseName: py-http
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo-jx.n8m.nl/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-staging/py-http
+    version: 0.0.1
