@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - nigle-dev/py-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - nigle-dev/python-http
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -38,6 +42,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       nigle-dev/jx3-kubernetes:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      nigle-dev/py-http:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -78,6 +87,20 @@ data:
       - pony
       nigle-dev/jx3-kubernetes:
       - config-updater
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      nigle-dev/py-http:
       - approve
       - assign
       - help
@@ -147,6 +170,9 @@ data:
       trusted_org: todo
     - repos:
       - nigle-dev/golang-http
+      trusted_org: todo
+    - repos:
+      - nigle-dev/py-http
       trusted_org: todo
     - repos:
       - nigle-dev/python-http

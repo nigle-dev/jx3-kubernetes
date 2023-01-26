@@ -9,6 +9,7 @@ data:
       enabled:
         nigle-dev/golang-http: true
         nigle-dev/jx3-kubernetes: true
+        nigle-dev/py-http: true
         nigle-dev/python-http: true
         nigle-dev/python-http2: true
         nigle-dev/python-http3: true
@@ -25,6 +26,7 @@ data:
       merge_method:
         nigle-dev/golang-http: merge
         nigle-dev/jx3-kubernetes: merge
+        nigle-dev/py-http: merge
         nigle-dev/python-http: merge
         nigle-dev/python-http2: merge
         nigle-dev/python-http3: merge
@@ -40,6 +42,7 @@ data:
         repos:
         - nigle-dev/jx3-kubernetes
         - nigle-dev/golang-http
+        - nigle-dev/py-http
         - nigle-dev/python-http
         - nigle-dev/python-http2
         - nigle-dev/python-http3
@@ -54,6 +57,7 @@ data:
         repos:
         - nigle-dev/jx3-kubernetes
         - nigle-dev/golang-http
+        - nigle-dev/py-http
         - nigle-dev/python-http
         - nigle-dev/python-http2
         - nigle-dev/python-http3

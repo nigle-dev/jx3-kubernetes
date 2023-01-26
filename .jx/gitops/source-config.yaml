@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: golang-http
+    - name: py-http
     - name: python-http
     - name: python-http2
     - name: python-http3

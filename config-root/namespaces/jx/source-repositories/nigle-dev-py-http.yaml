@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: nigle-dev
+    provider: github
+    repository: py-http
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: nigle-dev-py-http
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/nigle-dev/py-http.git
+  org: nigle-dev
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: py-http
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/nigle-dev/py-http
