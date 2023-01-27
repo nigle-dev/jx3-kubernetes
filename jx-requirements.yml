@@ -30,6 +30,9 @@ spec:
       email: "nils@glerum.eu"
       enabled: true
       production: false
+    annotations:
+      cert-manager.io/issuer: letsencrypt-production
+      cert-manager.io/issuer-kind: ClusterIssuer
   pipelineUser:
     username: nigle-dev
   repository: bucketrepo
