@@ -29,7 +29,7 @@ spec:
     tls:
       email: "nils@glerum.eu"
       enabled: true
-      production: true
+      production: false
   pipelineUser:
     username: nigle-dev
   repository: bucketrepo
