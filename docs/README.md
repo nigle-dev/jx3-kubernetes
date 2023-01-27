@@ -16,6 +16,13 @@
 		      <td colspan='5'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
+	      <td>lighthouse-webui-plugin</td>
+	      <td title='Web UI for Lighthouse, to visualize events, jobs, and merge status/history.'><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse-webui-plugin</a></td>
+	      <td>0.1.7</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
+	    </tr>
+    <tr>
 	      <td>jxboot-helmfile-resources</td>
 	      <td title='A Helm chart for the resources for JX Boot'><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources</a></td>
 	      <td>1.1.270</td>
