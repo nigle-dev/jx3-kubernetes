@@ -43,8 +43,8 @@ jxRequirements:
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:
-      email: ""
-      enabled: false
+      email: nils@glerum.eu
+      enabled: true
       production: false
   pipelineUser:
     username: nigle-dev
@@ -55,7 +55,7 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: true
 jxRequirementsIngressTLS:
-  enabled: false
+  enabled: true
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

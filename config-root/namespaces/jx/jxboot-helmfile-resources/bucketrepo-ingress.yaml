@@ -20,3 +20,7 @@ spec:
             port:
               number: 80
     host: bucketrepo-jx.n8m.nl
+  tls:
+  - hosts:
+    - bucketrepo-jx.n8m.nl
+    secretName: "tls-n8m-nl-s"

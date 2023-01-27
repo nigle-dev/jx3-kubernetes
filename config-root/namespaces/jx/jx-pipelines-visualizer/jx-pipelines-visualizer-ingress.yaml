@@ -28,3 +28,7 @@ spec:
             name: jx-pipelines-visualizer
             port:
               name: http
+  tls:
+  - secretName: tls-n8m-nl-s
+    hosts:
+    - dashboard-jx.n8m.nl
