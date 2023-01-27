@@ -28,7 +28,7 @@ spec:
     namespaceSubDomain: -jx.
     tls:
       email: "nils@glerum.eu"
-      enabled: false
+      enabled: true
       production: false
   pipelineUser:
     username: nigle-dev
