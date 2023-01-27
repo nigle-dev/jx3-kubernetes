@@ -27,7 +27,7 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: "nils@glerum.eu"
+      email: nils@glerum.eu
       enabled: true
       production: false
   pipelineUser:

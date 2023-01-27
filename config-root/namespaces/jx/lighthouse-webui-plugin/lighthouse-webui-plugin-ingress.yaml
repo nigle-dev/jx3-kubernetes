@@ -28,3 +28,7 @@ spec:
             name: lighthouse-webui-plugin
             port:
               name: http
+  tls:
+  - secretName: tls-n8m-nl-s
+    hosts:
+    - lighthouse-jx.n8m.nl
