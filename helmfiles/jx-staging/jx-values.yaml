@@ -21,7 +21,7 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo-jx.n8m.nl/bucketrepo/charts/
+    chartRepository: https://bucketrepo-jx.n8m.nl/bucketrepo/charts/
     clusterName: kind
     devEnvApprovers:
     - todo
@@ -38,6 +38,9 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
+    annotations:
+      cert-manager.io/issuer: letsencrypt-production
+      cert-manager.io/issuer-kind: ClusterIssuer
     domain: n8m.nl
     externalDNS: true
     kind: ingress
