@@ -27,9 +27,9 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: "nils@glerum.eu"
+      enabled: true
+      production: true
   pipelineUser:
     username: nigle-dev
   repository: bucketrepo
