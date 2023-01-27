@@ -5,7 +5,7 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo-jx.n8m.nl/bucketrepo/charts/
+    chartRepository: https://bucketrepo-jx.n8m.nl/bucketrepo/charts/
     clusterName: kind
     devEnvApprovers:
     - todo
